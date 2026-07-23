@@ -4,7 +4,9 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello CI/CD !');
 });
-
+app.get('/bonjour', (req, res) => {
+  res.send('Bonjour tout le monde');
+});
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
