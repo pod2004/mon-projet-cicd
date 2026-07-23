@@ -1,4 +1,4 @@
-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const express = require('express');
+
 const app = express();
 
 app.get('/', (req, res) => {
